@@ -9,7 +9,8 @@ Task C:
  - Customize the HTML user interface for your customer’s application. The 
 user interface should include the shop name, the product names, and the 
 names of the parts.
- - Location is: 
+ - Adjusted: Shopname and header to 'Mike's Skateboard Shop'
+ - Adjusted: Part names
 
 Task D:
  - Add an “About” page to the application to describe your chosen 
