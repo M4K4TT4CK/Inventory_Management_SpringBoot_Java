@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class DemoApplication {
-
+	//notes for self-test
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
 	}
