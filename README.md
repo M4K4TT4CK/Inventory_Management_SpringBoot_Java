@@ -2,7 +2,8 @@ Task B:
  - Create a README file that includes notes describing where in the code 
 to find the changes you made for each of parts C to J. Each note should 
 include the prompt, file name, line number, and change.
- - Location is: 
+ - Location is: File was palced in branch -> working branch, added the Tasks
+by Letter to file 
 
 Task C:
  - Customize the HTML user interface for your customer’s application. The 
