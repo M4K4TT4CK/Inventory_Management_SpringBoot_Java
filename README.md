@@ -34,7 +34,12 @@ and product lists are empty. When adding the sample inventory appropriate
 for the store, the inventory is stored in a set so duplicate items cannot 
 be added to your products. When duplicate items are added, make a 
 “multi-pack” part.
-- Location is:
+- Add five products to BootStrapData:
+  - Skateboard
+  - Kids Skateboard
+  - Old School Skateboard
+  - Longboard
+  - Electric Skateboard
 
 Task F:
 -Add a “Buy Now” button to your product list. Your “Buy Now” button must 

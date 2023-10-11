@@ -66,6 +66,11 @@ public class BootStrapData implements CommandLineRunner {
         productRepository.save(bicycle);
         productRepository.save(unicycle);
         */
+        Product skateboard = new Product("Skateboard", 100.0, 15);
+        Product kidsShortBoard = new Product("Kids Board", 50.0, 10);
+        Product longBoard = new Product("Longboard", 215.0, 10);
+        Product oldSchool = new Product("Old School Skateboard", 180.0, 5);
+        Product electricSkateboard = new Product("Electric Skateboard", 500.0, 5);
 
         System.out.println("Started in Bootstrap");
         System.out.println("Number of Products"+productRepository.count());
