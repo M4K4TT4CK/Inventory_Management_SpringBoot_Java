@@ -40,15 +40,6 @@ public class BootStrapData implements CommandLineRunner {
     public void run(String... args) throws Exception {
 
 
-//        OutsourcedPart o= new OutsourcedPart();
-//        o.setCompanyName("Western Governors University");
-//        o.setName("out test");
-//        o.setInv(5);
-//        o.setPrice(20.0);
-//        o.setId(100L);
-//        outsourcedPartRepository.save(o);
-//        OutsourcedPart thePart=null;
-
         // Part 1: add wheel parts
         OutsourcedPart wheels = new OutsourcedPart();
         wheels.setName("Wheels");
@@ -85,16 +76,6 @@ public class BootStrapData implements CommandLineRunner {
         decks.setId(104);
         outsourcedPartRepository.save(decks);
 
-
-
-        /*
-        List<OutsourcedPart> outsourcedParts=(List<OutsourcedPart>) outsourcedPartRepository.findAll();
-        for(OutsourcedPart part:outsourcedParts){
-            if(part.getName().equals("out test"))thePart=part;
-        }
-
-        System.out.println(thePart.getCompanyName());
-        */
         List<OutsourcedPart> outsourcedParts=(List<OutsourcedPart>) outsourcedPartRepository.findAll();
         for(OutsourcedPart part:outsourcedParts){
             System.out.println(part.getName()+" "+part.getCompanyName());
@@ -102,13 +83,20 @@ public class BootStrapData implements CommandLineRunner {
 
         // Add 5 products
         Product skateboard = new Product("Skateboard", 100.0, 15);
+        productRepository.save(skateboard);
         Product kidsShortBoard = new Product("Kids Board", 50.0, 10);
+        productRepository.save(kidsShortBoard);
         Product longBoard = new Product("Longboard", 215.0, 10);
+        productRepository.save(longBoard);
         Product oldSchool = new Product("Old School Skateboard", 180.0, 5);
+        productRepository.save(oldSchool);
         Product electricSkateboard = new Product("Electric Skateboard", 500.0, 5);
+        productRepository.save(electricSkateboard);
 
-        // Add 5 parts
-        // Part wheels = new Part(1000, "Wheels", 40.0, 100);
+        List<Product> products = (List<Product>) productRepository.findAll();
+        for(Product item: products){
+            System.out.println(item.getName());
+        }
 
         System.out.println("Started in Bootstrap");
         System.out.println("Number of Products"+productRepository.count());
