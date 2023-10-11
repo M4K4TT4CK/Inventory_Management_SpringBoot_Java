@@ -1,21 +1,18 @@
-Task B:
- o Create a README file that includes notes describing where in the code 
+Task B: Create a README file that includes notes describing where in the code 
 to find the changes you made for each of parts C to J. Each note should 
 include the prompt, file name, line number, and change.
 
  - Location is: File was palced in branch -> working branch, added the 
 Tasks by Letter to file 
 
-Task C:
- o Customize the HTML user interface for your customer’s application. The 
+Task C: Customize the HTML user interface for your customer’s application. The 
 user interface should include the shop name, the product names, and the 
 names of the parts.
 
  - Adjusted: Shopname and header to 'Mike's Skateboard Shop'
  - Adjusted: Part names
 
-Task D:
- o Add an “About” page to the application to describe your chosen 
+Task D: Add an “About” page to the application to describe your chosen 
 customer’s company to web viewers and include navigation to and from the 
 “About” page and the main screen.
 
@@ -28,8 +25,7 @@ customer’s company to web viewers and include navigation to and from the
  - Resource for Image is: 
 https://pixabay.com/photos/skateboard-skateboarder-skae-2271295/
  
-Task E:
- o  Add a sample inventory appropriate for your chosen store to the 
+Task E: Add a sample inventory appropriate for your chosen store to the 
 application. You should have five parts and five products in your sample 
 inventory and should not overwrite existing data in the database.
  o Note: Make sure the sample inventory is added only when both the part 
@@ -50,8 +46,8 @@ be added to your products. When duplicate items are added, make a
   - Bearings
   - Griptape
   - Decks
-Task F:
- o Add a “Buy Now” button to your product list. Your “Buy Now” 
+
+Task F: Add a “Buy Now” button to your product list. Your “Buy Now” 
 button must 
 meet each of the following parameters:
 
@@ -63,7 +59,7 @@ should not affect the inventory of any of the associated parts.
 
 •   Display a message that indicates the success or failure of a purchase.
 
-- Location is:
+  - Add Buy now button on product table adjacent to update/delete in mainscreen
 
 Task G:
  o Modify the parts to track maximum and minimum inventory by doing the 
