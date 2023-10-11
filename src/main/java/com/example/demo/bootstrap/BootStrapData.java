@@ -58,31 +58,31 @@ public class BootStrapData implements CommandLineRunner {
         outsourcedPartRepository.save(wheels);
         // Part 2: add trucks parts
         OutsourcedPart trucks = new OutsourcedPart();
-        wheels.setName("Trucks");
-        wheels.setInv(25);
-        wheels.setPrice(55.0);
-        wheels.setId(101);
+        trucks.setName("Trucks");
+        trucks.setInv(25);
+        trucks.setPrice(55.0);
+        trucks.setId(101);
         outsourcedPartRepository.save(trucks);
         // Part 3: add bearings parts
         OutsourcedPart bearings = new OutsourcedPart();
-        wheels.setName("Bearings");
-        wheels.setInv(200);
-        wheels.setPrice(15.0);
-        wheels.setId(102);
+        bearings.setName("Bearings");
+        bearings.setInv(200);
+        bearings.setPrice(15.0);
+        bearings.setId(102);
         outsourcedPartRepository.save(bearings);
         // Part 4: add griptape parts
         OutsourcedPart griptape = new OutsourcedPart();
-        wheels.setName("Griptape");
-        wheels.setInv(300);
-        wheels.setPrice(5.0);
-        wheels.setId(103);
+        griptape.setName("Griptape");
+        griptape.setInv(300);
+        griptape.setPrice(5.0);
+        griptape.setId(103);
         outsourcedPartRepository.save(griptape);
         // Part 5: add deck parts
         OutsourcedPart decks = new OutsourcedPart();
-        wheels.setName("Decks");
-        wheels.setInv(100);
-        wheels.setPrice(65.0);
-        wheels.setId(104);
+        decks.setName("Decks");
+        decks.setInv(100);
+        decks.setPrice(65.0);
+        decks.setId(104);
         outsourcedPartRepository.save(decks);
 
 
