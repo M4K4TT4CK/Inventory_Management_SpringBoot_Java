@@ -20,7 +20,11 @@ customer’s company to web viewers and include navigation to and from the
  - Add: Information about customers business
  - Add: AboutUsController.java
  - Add: Link on mainscreen to aboutus
- - Add: Link on aboutus to mainscreen 
+ - Add: Link on aboutus to mainscreen
+ - Adjust: About Us section of about us and added an image
+ - Resource for Image is: 
+https://pixabay.com/photos/skateboard-skateboarder-skae-2271295/
+ 
 Task E:
 - Add a sample inventory appropriate for your chosen store to the 
 application. You should have five parts and five products in your sample 
