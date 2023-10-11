@@ -17,7 +17,8 @@ Task D:
 customer’s company to web viewers and include navigation to and from the 
 “About” page and the main screen.
  - Add: aboutUs.html page in templates
- - Add: Information about customers business 
+ - Add: Information about customers business
+ - Add: AboutUsController.java 
 Task E:
 - Add a sample inventory appropriate for your chosen store to the 
 application. You should have five parts and five products in your sample 
