@@ -1,21 +1,24 @@
 Task B:
- - Create a README file that includes notes describing where in the code 
+ o Create a README file that includes notes describing where in the code 
 to find the changes you made for each of parts C to J. Each note should 
 include the prompt, file name, line number, and change.
- - Location is: File was palced in branch -> working branch, added the Tasks
-by Letter to file 
+
+ - Location is: File was palced in branch -> working branch, added the 
+Tasks by Letter to file 
 
 Task C:
- - Customize the HTML user interface for your customer’s application. The 
+ o Customize the HTML user interface for your customer’s application. The 
 user interface should include the shop name, the product names, and the 
 names of the parts.
+
  - Adjusted: Shopname and header to 'Mike's Skateboard Shop'
  - Adjusted: Part names
 
 Task D:
- - Add an “About” page to the application to describe your chosen 
+ o Add an “About” page to the application to describe your chosen 
 customer’s company to web viewers and include navigation to and from the 
 “About” page and the main screen.
+
  - Add: aboutUs.html page in templates
  - Add: Information about customers business
  - Add: AboutUsController.java
@@ -26,23 +29,30 @@ customer’s company to web viewers and include navigation to and from the
 https://pixabay.com/photos/skateboard-skateboarder-skae-2271295/
  
 Task E:
-- Add a sample inventory appropriate for your chosen store to the 
+ o  Add a sample inventory appropriate for your chosen store to the 
 application. You should have five parts and five products in your sample 
 inventory and should not overwrite existing data in the database.
-- Note: Make sure the sample inventory is added only when both the part 
+ o Note: Make sure the sample inventory is added only when both the part 
 and product lists are empty. When adding the sample inventory appropriate 
 for the store, the inventory is stored in a set so duplicate items cannot 
 be added to your products. When duplicate items are added, make a 
 “multi-pack” part.
+
 - Add five products to BootStrapData:
   - Skateboard
   - Kids Skateboard
   - Old School Skateboard
   - Longboard
   - Electric Skateboard
-
+- Add five parts to BooStrap Data:
+  - Wheels
+  - Trucks
+  - Bearings
+  - Griptape
+  - Decks
 Task F:
--Add a “Buy Now” button to your product list. Your “Buy Now” button must 
+ o Add a “Buy Now” button to your product list. Your “Buy Now” 
+button must 
 meet each of the following parameters:
 
 •   The “Buy Now” button must be next to the buttons that update and 
@@ -56,7 +66,7 @@ should not affect the inventory of any of the associated parts.
 - Location is:
 
 Task G:
-- Modify the parts to track maximum and minimum inventory by doing the 
+ o Modify the parts to track maximum and minimum inventory by doing the 
 following:
 
 •   Add additional fields to the part entity for maximum and minimum 
@@ -76,7 +86,7 @@ minimum and maximum value.
 - Location is:
 
 Task H:
-- Add validation for between or at the maximum and minimum fields. The 
+ o Add validation for between or at the maximum and minimum fields. The 
 validation must include the following:
 
 •   Display error messages for low inventory when adding and updating 
