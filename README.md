@@ -60,7 +60,7 @@ should not affect the inventory of any of the associated parts.
 •   Display a message that indicates the success or failure of a purchase.
 
   - Add Buy now button on product table adjacent to update/delete in mainscreen
-
+  - Add ConfirmationBuyController to contoller to controllers
 Task G:
  o Modify the parts to track maximum and minimum inventory by doing the 
 following:
