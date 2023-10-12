@@ -30,10 +30,8 @@ public abstract class Part implements Serializable {
     @Min(value = 0, message = "Inventory value must be positive")
     int inv;
 
-    @Min(value = 5, message = "Inventory must never be below 5")
+    @Min(value = 0, message = "Inventory must never be below 5")
     int minInv;
-
-    @Max(value = 500, message = "Inventory cannot exceed 500 pieces")
     int maxInv;
 
     @ManyToMany
@@ -57,10 +55,6 @@ public abstract class Part implements Serializable {
         this.inv = inv;
     }
 
-    public Part(int minInv, int maxInv){
-        this.minInv = minInv;
-        this.maxInv =maxInv;
-    }
 
     public long getId() {
         return id;
@@ -92,6 +86,14 @@ public abstract class Part implements Serializable {
 
     public void setInv(int inv) {
         this.inv = inv;
+    }
+
+    public void setMinInv(int minInv){
+        this.minInv = minInv;
+    }
+
+    public void setMaxInv(int maxInv){
+        this.maxInv =maxInv;
     }
 
     public Set<Product> getProducts() {

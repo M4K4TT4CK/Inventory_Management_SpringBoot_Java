@@ -85,6 +85,7 @@ minimum and maximum value.
 
   - Add maxInv and minInv private fields in Part.java
   - Create new constructor in parts.java with maxInv and minInv
+  - Create setters and getters -> setMaxInv getMaxInv, setMinInv getMaxInv
 
 Task H: Add validation for between or at the maximum and minimum fields. The 
 validation must include the following:
