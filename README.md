@@ -83,7 +83,8 @@ values.
 •   Modify the code to enforce that the inventory is between or at the 
 minimum and maximum value.
 
-- Location is:
+  - Add maxInv and minInv private fields in Part.java
+  - Create new constructor in parts.java with maxInv and minInv
 
 Task H: Add validation for between or at the maximum and minimum fields. The 
 validation must include the following:
