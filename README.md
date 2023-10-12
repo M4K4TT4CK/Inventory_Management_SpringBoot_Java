@@ -64,8 +64,8 @@ should not affect the inventory of any of the associated parts.
   - Modied controller name to ConfirmBuyController
   - Add buyproducts and errorpage templates and controllers 
   - Added method to product.java that return boolean for inventory
-  - Mapped endpoint in AddProductController, return confirmBuy page or errorPage depending
-   inventory value
+  - Mapped endpoint in AddProductController, return confirmBuy page or errorPage depending on inventory value
+
 Task G: Modify the parts to track maximum and minimum inventory by doing the 
 following:
 
