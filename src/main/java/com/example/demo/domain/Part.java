@@ -30,7 +30,7 @@ public abstract class Part implements Serializable {
     @Min(value = 0, message = "Inventory value must be positive")
     int inv;
 
-    @Min(value = 0, message = "Inventory must never be below 5")
+    @Min(value = 0, message = "Inventory cannot be below zero")
     int minInv;
     int maxInv;
 
@@ -53,6 +53,11 @@ public abstract class Part implements Serializable {
         this.name = name;
         this.price = price;
         this.inv = inv;
+    }
+
+    public Part(int minInv, int maxInv){
+        this.minInv = minInv;
+        this.maxInv = maxInv;
     }
 
 

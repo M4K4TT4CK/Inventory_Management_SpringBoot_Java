@@ -87,7 +87,7 @@ minimum and maximum value.
   - Create new constructor in parts.java with maxInv and minInv
   - Create setters and getters -> setMaxInv getMaxInv, setMinInv getMaxInv
   - Create TH in mainscreen.html to dispay min and max
-
+  - Add max and min values in inhouspart and outsourcepart 100 and 0 respectivlty
 Task H: Add validation for between or at the maximum and minimum fields. The 
 validation must include the following:
 
