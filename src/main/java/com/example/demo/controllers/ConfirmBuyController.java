@@ -44,12 +44,12 @@ public class ConfirmBuyController {
         int currentInventory = product.getInv();
         if (currentInventory > 0) {
             product.setInv(currentInventory - 1);
-            productRepository.save(product);
+            productRepository.save(product); // Save the updated product
         } else {
-            return "erroPage";
+            return "errorPage"; // Inventory is zero, return an error page
         }
 
-
-        return "confirmationBuy";
+        return "confirmBuy"; // Return to the confirmation page
     }
+
 }

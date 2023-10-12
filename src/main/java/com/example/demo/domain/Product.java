@@ -2,6 +2,7 @@ package com.example.demo.domain;
 
 import com.example.demo.validators.ValidEnufParts;
 import com.example.demo.validators.ValidProductPrice;
+import org.springframework.web.bind.annotation.GetMapping;
 
 import javax.persistence.*;
 import javax.validation.constraints.Min;
@@ -103,5 +104,15 @@ public class Product implements Serializable {
     @Override
     public int hashCode() {
         return (int) (id ^ (id >>> 32));
+    }
+
+    public boolean buyProduct() {
+        if (this.inv >= 1 ) {
+            this.inv--;
+            return true;
+        } else {
+            return false;
+        }
+
     }
 }

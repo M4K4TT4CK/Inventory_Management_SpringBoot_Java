@@ -61,8 +61,12 @@ should not affect the inventory of any of the associated parts.
 
   - Add Buy now button on product table adjacent to update/delete in mainscreen
   - Add ConfirmationBuyController to contoller to controllers
-Task G:
- o Modify the parts to track maximum and minimum inventory by doing the 
+  - Modied controller name to ConfirmBuyController
+  - Add buyproducts and errorpage templates and controllers 
+  - Added method to product.java that return boolean for inventory
+  - Mapped endpoint in AddProductController, return confirmBuy page or errorPage depending
+   inventory value
+Task G: Modify the parts to track maximum and minimum inventory by doing the 
 following:
 
 •   Add additional fields to the part entity for maximum and minimum 
@@ -81,8 +85,7 @@ minimum and maximum value.
 
 - Location is:
 
-Task H:
- o Add validation for between or at the maximum and minimum fields. The 
+Task H: Add validation for between or at the maximum and minimum fields. The 
 validation must include the following:
 
 •   Display error messages for low inventory when adding and updating 
@@ -99,8 +102,7 @@ Task I:
 the PartTest class in the test package.
 - Location is:
 
-Task J:
-- J.  Remove the class files for any unused validators in order to clean 
+Task J: Remove the class files for any unused validators in order to clean 
 your code.
 - Files removed were:
 
