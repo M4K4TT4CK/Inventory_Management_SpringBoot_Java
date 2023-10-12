@@ -91,6 +91,7 @@ minimum and maximum value.
   - Rename DB to mikes_DB.mv.db from user home in directory
   - Rename spring.datesource in application.properties to match new DB -> mikes_DB.mv.db
   - Add table headers for maxInv and minInv in mainscreen.html
+  - Add custom validator @ValidInventoryRange to check for min and max inventories, created InventoryInRangeValidator and ValidInventoryInRange UI
 
 Task H: Add validation for between or at the maximum and minimum fields. The 
 validation must include the following:
