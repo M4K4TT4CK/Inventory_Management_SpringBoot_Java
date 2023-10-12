@@ -88,6 +88,9 @@ minimum and maximum value.
   - Create setters and getters -> setMaxInv getMaxInv, setMinInv getMaxInv
   - Create TH in mainscreen.html to dispay min and max
   - Add max and min values in inhouspart and outsourcepart 100 and 0 respectivlty
+  - Rename DB to mikes_DB.mv.db from user home in directory
+  - Rename spring.datesource in application.properties to match new DB -> mikes_DB.mv.db
+
 Task H: Add validation for between or at the maximum and minimum fields. The 
 validation must include the following:
 
