@@ -46,6 +46,7 @@ be added to your products. When duplicate items are added, make a
   - Bearings
   - Griptape
   - Decks
+- Add addPartIfNotExsists in BootStrapData for parts
 
 Task F: Add a “Buy Now” button to your product list. Your “Buy Now” 
 button must 
@@ -104,6 +105,8 @@ products lowers the part inventory below the minimum.
 
 •   Display error messages when adding and updating parts if the inventory 
 is greater than the maximum.
+
+  - Add
 
 Task I:
 - I.  Add at least two unit tests for the maximum and minimum fields to 
