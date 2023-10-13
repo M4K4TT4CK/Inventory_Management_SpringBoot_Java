@@ -4,12 +4,12 @@ import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 
 public class InventoryInRangeValidator implements ConstraintValidator<ValidInventoryInRange, Integer> {
-    private int minInv;
+    // private int minInv;
     private int maxInv;
 
     @Override
     public void initialize(ValidInventoryInRange constraintAnnotation) {
-        this.minInv = constraintAnnotation.minInv();
+        //this.minInv = constraintAnnotation.minInv();
         this.maxInv = constraintAnnotation.maxInv();
     }
 
@@ -18,6 +18,7 @@ public class InventoryInRangeValidator implements ConstraintValidator<ValidInven
         if (value == null) {
             return true; // Null values are considered valid
         }
-        return value >= minInv && value <= maxInv;
+        return value <= maxInv;
+        // >= minInv && value
     }
 }

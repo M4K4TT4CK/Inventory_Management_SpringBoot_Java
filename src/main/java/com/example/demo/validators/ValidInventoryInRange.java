@@ -19,6 +19,6 @@ public @interface ValidInventoryInRange {
     Class<?>[] groups() default {};
     Class<? extends Payload>[] payload() default {};
 
-    int minInv() default 0;
+    //int minInv() default 0;
     int maxInv() default 500;
 }

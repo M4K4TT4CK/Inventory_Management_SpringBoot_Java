@@ -3,6 +3,7 @@ package com.example.demo.domain;
 import com.example.demo.validators.ValidDeletePart;
 import com.example.demo.validators.ValidInventoryInRange;
 import com.example.demo.validators.ValidMinInventoryInRange;
+//import com.example.demo.validators.ValidMinInventoryInRange;
 
 import javax.persistence.*;
 import javax.validation.constraints.Max;
@@ -31,6 +32,7 @@ public abstract class Part implements Serializable {
     double price;
 
     //@Max(value = 500, message = "Inventory cannot be above 500")
+    // @Min(value = 0, message = "Inventory cannot be below zero units")
     @ValidMinInventoryInRange
     @ValidInventoryInRange
     int inv;

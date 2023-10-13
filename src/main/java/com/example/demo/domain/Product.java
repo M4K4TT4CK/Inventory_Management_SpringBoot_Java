@@ -1,6 +1,7 @@
 package com.example.demo.domain;
 
 import com.example.demo.validators.ValidEnufParts;
+// import com.example.demo.validators.ValidMinProductInRange;
 import com.example.demo.validators.ValidProductPrice;
 import org.springframework.web.bind.annotation.GetMapping;
 
@@ -29,6 +30,9 @@ public class Product implements Serializable {
     double price;
     @Min(value = 0, message = "Inventory value must be positive")
     int inv;
+    // @ValidMinProductInRange
+    // int minProduct;
+
     @ManyToMany(cascade=CascadeType.ALL, mappedBy = "products")
     Set<Part> parts= new HashSet<>();
 
@@ -115,4 +119,11 @@ public class Product implements Serializable {
         }
 
     }
+
+//    public void validRangeLimit() {
+//
+//        if (this.inv < this.minProduct) {
+//            this.inv = this.minProduct;
+//        }
+//    }
 }
