@@ -107,8 +107,8 @@ products lowers the part inventory below the minimum.
 •   Display error messages when adding and updating parts if the inventory 
 is greater than the maximum.
 
-  - Add custom validator @ValidInventoryRange to check for min and max inventories, created InventoryInRangeValidator and ValidInventoryInRange UI
-
+  - Add custom validator @ValidInventoryRange to check for max inventories, generates error message when adding parts
+  - Add custom validator @ValidMinInventoryrange for check for min inventories, generates error message when adding parts
 
 Task I:
 - I.  Add at least two unit tests for the maximum and minimum fields to 
