@@ -137,4 +137,15 @@ public abstract class Part implements Serializable {
     public int hashCode() {
         return (int) (id ^ (id >>> 32));
     }
+
+    // Validate logic for inventory range
+    public void validRangeLimit() {
+
+        if (this.inv < this.minInv) {
+            this.inv = this.minInv;
+        }
+        else if (this.inv > this.maxInv ) {
+            this.inv = this.maxInv;
+        }
+    }
 }

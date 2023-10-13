@@ -92,7 +92,8 @@ minimum and maximum value.
   - Rename DB to mikes_DB.mv.db from user home in directory
   - Rename spring.datesource in application.properties to match new DB -> mikes_DB.mv.db
   - Add table headers for maxInv and minInv in mainscreen.html
-  - Add custom validator @ValidInventoryRange to check for min and max inventories, created InventoryInRangeValidator and ValidInventoryInRange UI
+  - Add custom validRangeLimit() to Part.java to validate inventory range
+  - Add thePartv.validRangeLimit() to InhousePartService.java and OutsourcesPartService.java
 
 Task H: Add validation for between or at the maximum and minimum fields. The 
 validation must include the following:
@@ -106,7 +107,8 @@ products lowers the part inventory below the minimum.
 •   Display error messages when adding and updating parts if the inventory 
 is greater than the maximum.
 
-  - Add
+  - Add custom validator @ValidInventoryRange to check for min and max inventories, created InventoryInRangeValidator and ValidInventoryInRange UI
+
 
 Task I:
 - I.  Add at least two unit tests for the maximum and minimum fields to 
