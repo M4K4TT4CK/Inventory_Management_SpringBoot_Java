@@ -30,8 +30,6 @@ public class Product implements Serializable {
     double price;
     @Min(value = 0, message = "Inventory value must be positive")
     int inv;
-    // @ValidMinProductInRange
-    // int minProduct;
 
     @ManyToMany(cascade=CascadeType.ALL, mappedBy = "products")
     Set<Part> parts= new HashSet<>();
@@ -117,13 +115,5 @@ public class Product implements Serializable {
         } else {
             return false;
         }
-
     }
-
-//    public void validRangeLimit() {
-//
-//        if (this.inv < this.minProduct) {
-//            this.inv = this.minProduct;
-//        }
-//    }
 }
