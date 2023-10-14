@@ -112,10 +112,10 @@ is greater than the maximum.
   - @ValidMinInventoryRange is set to zero, if inventory is less that min num parts there is an error message
   - Task F only requires that the inventory is decrementred by one and does nothing with the associated parts, no requirement in tasks to make it functions this way, therfore same errorPage is applicable
 
-Task I:
-- I.  Add at least two unit tests for the maximum and minimum fields to 
+Task I: Add at least two unit tests for the maximum and minimum fields to 
 the PartTest class in the test package.
-- Location is:
+
+  - Add two test to PartTest.java -> @Test void getMin() and @Test void getMax()
 
 Task J: Remove the class files for any unused validators in order to clean 
 your code.
