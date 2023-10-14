@@ -110,7 +110,7 @@ is greater than the maximum.
   - Add custom validator @ValidInventoryRange to check for max inventories, generates error message when adding parts
   - Add custom validator @ValidMinInventoryrange for check for min inventories, generates error message when adding parts
   - @ValidMinInventoryRange is set to zero, if inventory is less that min num parts there is an error message
-  - Add custom validator @ValidMinProductInrange to check for min product inventory, generates error message if below minimum, adjusted Product.java to add validRangeLimit() and ProductServiceImpl with theProduct.validRangeLimit()
+  - Task F only requires that the inventory is decrementred by one and does nothing with the associated parts, no requirement in tasks to make it functions this way, therfore same errorPage is applicable
 
 Task I:
 - I.  Add at least two unit tests for the maximum and minimum fields to 

@@ -38,11 +38,11 @@ public class BootStrapData implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         // Add parts only if they don't already exist
-        addPartIfNotExists("Wheels", 50, 40.0, 100, outsourcedPartRepository);
-        addPartIfNotExists("Trucks", 25, 55.0, 101, outsourcedPartRepository);
-        addPartIfNotExists("Bearings", 200, 15.0, 102, outsourcedPartRepository);
-        addPartIfNotExists("Griptape", 300, 5.0, 103, outsourcedPartRepository);
-        addPartIfNotExists("Decks", 100, 65.0, 104, outsourcedPartRepository);
+        addPartIfNotExists("Wheels", 10, 40.0, 100, outsourcedPartRepository);
+        addPartIfNotExists("Trucks", 10, 55.0, 101, outsourcedPartRepository);
+        addPartIfNotExists("Bearings", 10, 15.0, 102, outsourcedPartRepository);
+        addPartIfNotExists("Griptape", 10, 5.0, 103, outsourcedPartRepository);
+        addPartIfNotExists("Decks", 10, 65.0, 104, outsourcedPartRepository);
 
         // Add products only if they don't already exist
         addProductIfNotExists("Skateboard", 100.0, 15, productRepository);
