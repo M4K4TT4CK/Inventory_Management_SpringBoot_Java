@@ -159,7 +159,7 @@ class PartTest {
 
     @Test
     void getMax() {
-        int max = 100;
+        int max = 500;
         partIn.setMaxInv(max);
         assertEquals(max, partIn.getMaxInv());
         partOut.setMaxInv(max);
