@@ -106,7 +106,7 @@ products lowers the part inventory below the minimum.
 Display error messages when adding and updating parts if the inventory 
 is greater than the maximum.
 
-  - In validators - dd custom validator @ValidInventoryRange to check for max inventories, generates error message when adding parts
+  - In validators - add custom validator @ValidInventoryRange to check for max inventories, generates error message when adding parts
   - In validators - Add custom validator @ValidMinInventoryrange for check for min inventories, generates error message when adding parts
   - Line 22 - @ValidMinInventoryRange is set to zero, if inventory is less that min num parts there is an error message
   - Task F only requires that the inventory is decrementred by one and does nothing with the associated parts, no requirement in tasks to make it functions this way, therefore same errorPage is applicable
