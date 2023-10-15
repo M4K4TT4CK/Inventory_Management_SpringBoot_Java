@@ -121,3 +121,9 @@ Task J: Remove the class files for any unused validators in order to clean
 your code.
   - In validators - delete DeletePartValidator -> zero usages
 
+
+Corrections as Per Evaluator:
+
+  - Aspect #B - add code line changes to README.md
+  - Aspect #G - Line 26-29 - add max and min fields to Inhouse Part Detail
+  - Aspect #G - Line 28-30 - add max and min fields to Outsourced Part Detail
