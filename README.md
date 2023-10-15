@@ -28,11 +28,10 @@ https://pixabay.com/photos/skateboard-skateboarder-skae-2271295/
 Task E: Add a sample inventory appropriate for your chosen store to the 
 application. You should have five parts and five products in your sample 
 inventory and should not overwrite existing data in the database.
- o Note: Make sure the sample inventory is added only when both the part 
+ Note: Make sure the sample inventory is added only when both the part 
 and product lists are empty. When adding the sample inventory appropriate 
 for the store, the inventory is stored in a set so duplicate items cannot 
-be added to your products. When duplicate items are added, make a 
-“multi-pack” part.
+be added to your products. 
 
 - Line 48 -52 - Add five products to BootStrapData:
   - Skateboard
@@ -52,13 +51,13 @@ Task F: Add a “Buy Now” button to your product list. Your “Buy Now”
 button must 
 meet each of the following parameters:
 
-•   The “Buy Now” button must be next to the buttons that update and 
+The “Buy Now” button must be next to the buttons that update and 
 delete products.
 
-•   The button should decrement the inventory of that product by one. It 
+The button should decrement the inventory of that product by one. It 
 should not affect the inventory of any of the associated parts.
 
-•   Display a message that indicates the success or failure of a purchase.
+Display a message that indicates the success or failure of a purchase.
 
   - Line 90-91 - Add Buy now button on product table adjacent to update/delete in mainscreen
   - In controllers - Add ConfirmationBuyController to contoller to controllers
@@ -70,18 +69,18 @@ should not affect the inventory of any of the associated parts.
 Task G: Modify the parts to track maximum and minimum inventory by doing the 
 following:
 
-•   Add additional fields to the part entity for maximum and minimum 
+Add additional fields to the part entity for maximum and minimum 
 inventory.
 
-•   Modify the sample inventory to include the maximum and minimum fields.
+Modify the sample inventory to include the maximum and minimum fields.
 
-•   Add to the InhousePartForm and OutsourcedPartForm forms additional 
+Add to the InhousePartForm and OutsourcedPartForm forms additional 
 text inputs for the inventory so the user can set the maximum and minimum 
 values.
 
-•   Rename the file the persistent storage is saved to.
+Rename the file the persistent storage is saved to.
 
-•   Modify the code to enforce that the inventory is between or at the 
+Modify the code to enforce that the inventory is between or at the 
 minimum and maximum value.
 
   - Line 40-41 - Add maxInv and minInv private fields in Part.java
@@ -98,17 +97,17 @@ minimum and maximum value.
 Task H: Add validation for between or at the maximum and minimum fields. The 
 validation must include the following:
 
-•   Display error messages for low inventory when adding and updating 
+Display error messages for low inventory when adding and updating 
 parts if the inventory is less than the minimum number of parts.
 
-•   Display error messages for low inventory when adding and updating 
+Display error messages for low inventory when adding and updating 
 products lowers the part inventory below the minimum.
 
-•   Display error messages when adding and updating parts if the inventory 
+Display error messages when adding and updating parts if the inventory 
 is greater than the maximum.
 
   - In validators - dd custom validator @ValidInventoryRange to check for max inventories, generates error message when adding parts
-  - IN validators - Add custom validator @ValidMinInventoryrange for check for min inventories, generates error message when adding parts
+  - In validators - Add custom validator @ValidMinInventoryrange for check for min inventories, generates error message when adding parts
   - Line 22 - @ValidMinInventoryRange is set to zero, if inventory is less that min num parts there is an error message
   - Task F only requires that the inventory is decrementred by one and does nothing with the associated parts, no requirement in tasks to make it functions this way, therefore same errorPage is applicable
 
@@ -125,5 +124,6 @@ your code.
 Corrections as Per Evaluator:
 
   - Aspect #B - add code line changes to README.md
-  - Aspect #G - Line 26-29 - add max and min fields to Inhouse Part Detail
-  - Aspect #G - Line 28-30 - add max and min fields to Outsourced Part Detail
+  - Aspect #G - Line 26-29 - add max and min fields to Inhouse Part Detail - so user can change values
+  - Aspect #G - Line 28-30 - add max and min fields to Outsourced Part Detail - so user can change values
+  - Aspect #H - Fixed ability to update parts through the addition of minInv and maxInv solved through Aspect#G
