@@ -2,26 +2,26 @@ Task B: Create a README file that includes notes describing where in the code
 to find the changes you made for each of parts C to J. Each note should 
 include the prompt, file name, line number, and change.
 
- - Location is: File was palced in branch -> working branch, added the 
+ - Location is: File was placed in branch -> working branch, added the 
 Tasks by Letter to file 
 
 Task C: Customize the HTML user interface for your customer’s application. The 
 user interface should include the shop name, the product names, and the 
 names of the parts.
 
- - Adjusted: Shopname and header to 'Mike's Skateboard Shop'
- - Adjusted: Part names
+ - Line 19 - Adjusted: Shopname and header to 'Mike's Skateboard Shop' in mainscreen
+ - Line 32 - Adjusted: Part names
 
 Task D: Add an “About” page to the application to describe your chosen 
 customer’s company to web viewers and include navigation to and from the 
 “About” page and the main screen.
 
- - Add: aboutUs.html page in templates
- - Add: Information about customers business
- - Add: AboutUsController.java
- - Add: Link on mainscreen to aboutus
- - Add: Link on aboutus to mainscreen
- - Adjust: About Us section of about us and added an image
+ - In templates - Add: aboutUs.html page in templates
+ - In aboutUs.html - Add: Information about customers business
+ - In controllers - Add: AboutUsController.java
+ - Line 101 - Add: Link on mainscreen to aboutus
+ - Line 39 - Add: Link on aboutus to mainscreen
+ - In aboutUs.html - Adjust: About Us section of about us and added an image
  - Resource for Image is: 
 https://pixabay.com/photos/skateboard-skateboarder-skae-2271295/
  
@@ -34,19 +34,19 @@ for the store, the inventory is stored in a set so duplicate items cannot
 be added to your products. When duplicate items are added, make a 
 “multi-pack” part.
 
-- Add five products to BootStrapData:
+- Line 48 -52 - Add five products to BootStrapData:
   - Skateboard
   - Kids Skateboard
   - Old School Skateboard
   - Longboard
   - Electric Skateboard
-- Add five parts to BooStrap Data:
+- Line 41- 45 - Add five parts to BootStrap Data:
   - Wheels
   - Trucks
   - Bearings
   - Griptape
   - Decks
-- Add addPartIfNotExsists in BootStrapData for parts
+- Line 61-93 - Add addPartIfNotExsists in BootStrapData for parts
 
 Task F: Add a “Buy Now” button to your product list. Your “Buy Now” 
 button must 
@@ -60,12 +60,12 @@ should not affect the inventory of any of the associated parts.
 
 •   Display a message that indicates the success or failure of a purchase.
 
-  - Add Buy now button on product table adjacent to update/delete in mainscreen
-  - Add ConfirmationBuyController to contoller to controllers
-  - Modied controller name to ConfirmBuyController
-  - Add buyproducts and errorpage templates and controllers 
-  - Added method to product.java that return boolean for inventory
-  - Mapped endpoint in AddProductController, return confirmBuy page or errorPage depending on inventory value
+  - Line 90-91 - Add Buy now button on product table adjacent to update/delete in mainscreen
+  - In controllers - Add ConfirmationBuyController to contoller to controllers
+  - In controllers - Modifed controller name to ConfirmBuyController
+  - In templates - Add buyproducts and errorpage templates and controllers 
+  - Line 111-117 - Added method to product.java that return boolean for inventory
+  - Line 172 - 182 - Mapped endpoint in AddProductController, return confirmBuy page or errorPage depending on inventory value
 
 Task G: Modify the parts to track maximum and minimum inventory by doing the 
 following:
@@ -84,16 +84,16 @@ values.
 •   Modify the code to enforce that the inventory is between or at the 
 minimum and maximum value.
 
-  - Add maxInv and minInv private fields in Part.java
-  - Create new constructor in parts.java with maxInv and minInv
-  - Create setters and getters -> setMaxInv getMaxInv, setMinInv getMaxInv
-  - Create TH in mainscreen.html to dispay min and max
-  - Add max and min values in inhouspart and outsourcepart 100 and 0 respectivlty
-  - Rename DB to mikes_DB.mv.db from user home in directory
-  - Rename spring.datesource in application.properties to match new DB -> mikes_DB.mv.db
-  - Add table headers for maxInv and minInv in mainscreen.html
-  - Add custom validRangeLimit() to Part.java to validate inventory range
-  - Add thePartv.validRangeLimit() to InhousePartService.java and OutsourcesPartService.java
+  - Line 40-41 - Add maxInv and minInv private fields in Part.java
+  - Line 64-67 - Create new constructor in parts.java with maxInv and minInv
+  - Create setters and getters -> setMaxInv (Line 110-113) getMaxInv (Line 114-117), setMinInv (Line 102-105) getMinInv (Line 106-109)
+  - Line 39-40 - Create TH in mainscreen.html to dispay min and max
+  - Add max and min values in inhouspart (Line 17-20) and outsourcepart (Line 17-20) 500 and 0 respectivly
+  - In user Folder - Rename DB to mikes_DB.mv.db from user home in directory
+  - Line 6 - Rename spring.datesource in application.properties to match new DB -> mikes_DB.mv.db
+  - Line 49-50 - Add table headers for maxInv and minInv in mainscreen.html
+  - Line 145-153 - Add custom validRangeLimit() to Part.java to validate inventory range
+  - Add thePart.validRangeLimit() to InhousePartServiceImpl.java (Line 54) and OutsourcesPartServiceImpl.java (Line 52)
 
 Task H: Add validation for between or at the maximum and minimum fields. The 
 validation must include the following:
@@ -107,17 +107,17 @@ products lowers the part inventory below the minimum.
 •   Display error messages when adding and updating parts if the inventory 
 is greater than the maximum.
 
-  - Add custom validator @ValidInventoryRange to check for max inventories, generates error message when adding parts
-  - Add custom validator @ValidMinInventoryrange for check for min inventories, generates error message when adding parts
-  - @ValidMinInventoryRange is set to zero, if inventory is less that min num parts there is an error message
-  - Task F only requires that the inventory is decrementred by one and does nothing with the associated parts, no requirement in tasks to make it functions this way, therfore same errorPage is applicable
+  - In validators - dd custom validator @ValidInventoryRange to check for max inventories, generates error message when adding parts
+  - IN validators - Add custom validator @ValidMinInventoryrange for check for min inventories, generates error message when adding parts
+  - Line 22 - @ValidMinInventoryRange is set to zero, if inventory is less that min num parts there is an error message
+  - Task F only requires that the inventory is decrementred by one and does nothing with the associated parts, no requirement in tasks to make it functions this way, therefore same errorPage is applicable
 
 Task I: Add at least two unit tests for the maximum and minimum fields to 
 the PartTest class in the test package.
 
-  - Add two test to PartTest.java -> @Test void getMin() and @Test void getMax()
+  - Line 161 -175 - Add two test to PartTest.java -> @Test void getMin() and @Test void getMax()
 
 Task J: Remove the class files for any unused validators in order to clean 
 your code.
-- Files removed were:
+  - In validators - delete DeletePartValidator -> zero usages
 
